@@ -1,0 +1,28 @@
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/generales";
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-red;
+    @include size (100%, 10vh);
+    ul {
+        display: flex;
+        li {
+            list-style: none;
+            margin: 0 30px;
+            a {
+                text-decoration: none;
+                color: $color-beige;
+                font-family: dinMed;
+                font-size: 1.8rem;
+                &:hover {
+                    color: $color-beige;
+                    font-family: dinBlack;
+                }
+            }
+        }
+    }
+}

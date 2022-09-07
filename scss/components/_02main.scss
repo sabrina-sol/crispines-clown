@@ -1,0 +1,88 @@
+@import "../base/variables";
+@import "../base/mixin";
+@import "../base/generales";
+
+.hero {
+    @include size (100%, 80vh);
+    background-image: url("../img/crispines-hero.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    color: $color-beige;
+    h1 {
+        font-family: olivier;
+        font-size: 3.5rem;
+        margin: 0 0 0 15px;
+        padding: 30px 0 0 0;
+    }
+}
+
+.mision, .dondeVamos, .nosotres {
+    background-color: $color-beige;
+    color: $color-blue;
+    h2 {
+        color: $color-red;
+        font-family: olivier;
+        font-size: 3rem;
+    }
+    p {
+        font-family: dinReg;
+        font-size: 2rem;
+    }
+}
+
+.mision {
+    text-align: center;
+    p {
+        span {
+            font-family: dinB;
+        }
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        margin: 0 5px;
+        div {
+            img {
+                @include size (300px, 200px);
+            }
+        }
+    }
+}
+
+.dondeVamos {
+    div {
+        display: flex;
+        img {
+            @include size (500px, 350px);
+        }
+    }
+    p {
+        span {
+            color: $color-red;
+        }
+    }
+}
+
+.imgCarousel {
+    @include size (1326px, 350px);
+}
+
+.nosotres {
+    div {
+        display: flex;
+        img {
+            @include size (500px, 350px);
+        }
+        p {
+            a {
+                color: $color-blue;
+                &:hover {
+                    color: $color-red;
+                }
+            }
+        }
+    }
+}

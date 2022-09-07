@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  src: url(../fonts/olivier_demo.ttf);
+  font-family: olivier; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BLACK.OTF);
+  font-family: dinBlack; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BOLD.OTF);
+  font-family: dinB; }
+
+@font-face {
+  src: url(../fonts/DINPRO-LIGHT.OTF);
+  font-family: dinLi; }
+
+@font-face {
+  src: url(../fonts/DINPRO-MEDIUM.OTF);
+  font-family: dinMed; }
+
+@font-face {
+  src: url(../fonts/DINPRO-REGULAR.OTF);
+  font-family: dinReg; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  src: url(../fonts/olivier_demo.ttf);
+  font-family: olivier; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BLACK.OTF);
+  font-family: dinBlack; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BOLD.OTF);
+  font-family: dinB; }
+
+@font-face {
+  src: url(../fonts/DINPRO-LIGHT.OTF);
+  font-family: dinLi; }
+
+@font-face {
+  src: url(../fonts/DINPRO-MEDIUM.OTF);
+  font-family: dinMed; }
+
+@font-face {
+  src: url(../fonts/DINPRO-REGULAR.OTF);
+  font-family: dinReg; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #CE3938;
+  width: 100%;
+  height: 10vh; }
+  nav ul {
+    display: flex; }
+    nav ul li {
+      list-style: none;
+      margin: 0 30px; }
+      nav ul li a {
+        text-decoration: none;
+        color: #FEFAEA;
+        font-family: dinMed;
+        font-size: 1.8rem; }
+        nav ul li a:hover {
+          color: #FEFAEA;
+          font-family: dinBlack; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  src: url(../fonts/olivier_demo.ttf);
+  font-family: olivier; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BLACK.OTF);
+  font-family: dinBlack; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BOLD.OTF);
+  font-family: dinB; }
+
+@font-face {
+  src: url(../fonts/DINPRO-LIGHT.OTF);
+  font-family: dinLi; }
+
+@font-face {
+  src: url(../fonts/DINPRO-MEDIUM.OTF);
+  font-family: dinMed; }
+
+@font-face {
+  src: url(../fonts/DINPRO-REGULAR.OTF);
+  font-family: dinReg; }
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/crispines-hero.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  color: #FEFAEA; }
+  .hero h1 {
+    font-family: olivier;
+    font-size: 3.5rem;
+    margin: 0 0 0 15px;
+    padding: 30px 0 0 0; }
+
+.mision, .dondeVamos, .nosotres {
+  background-color: #FEFAEA;
+  color: #006287; }
+  .mision h2, .dondeVamos h2, .nosotres h2 {
+    color: #CE3938;
+    font-family: olivier;
+    font-size: 3rem; }
+  .mision p, .dondeVamos p, .nosotres p {
+    font-family: dinReg;
+    font-size: 2rem; }
+
+.mision {
+  text-align: center; }
+  .mision p span {
+    font-family: dinB; }
+  .mision div {
+    display: flex;
+    justify-content: center;
+    margin: 0 5px; }
+    .mision div div img {
+      width: 300px;
+      height: 200px; }
+
+.dondeVamos div {
+  display: flex; }
+  .dondeVamos div img {
+    width: 500px;
+    height: 350px; }
+
+.dondeVamos p span {
+  color: #CE3938; }
+
+.imgCarousel {
+  width: 1326px;
+  height: 350px; }
+
+.nosotres div {
+  display: flex; }
+  .nosotres div img {
+    width: 500px;
+    height: 350px; }
+  .nosotres div p a {
+    color: #006287; }
+    .nosotres div p a:hover {
+      color: #CE3938; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  src: url(../fonts/olivier_demo.ttf);
+  font-family: olivier; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BLACK.OTF);
+  font-family: dinBlack; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BOLD.OTF);
+  font-family: dinB; }
+
+@font-face {
+  src: url(../fonts/DINPRO-LIGHT.OTF);
+  font-family: dinLi; }
+
+@font-face {
+  src: url(../fonts/DINPRO-MEDIUM.OTF);
+  font-family: dinMed; }
+
+@font-face {
+  src: url(../fonts/DINPRO-REGULAR.OTF);
+  font-family: dinReg; }
+
+footer {
+  width: 100%;
+  padding: 10px 0 30px 0;
+  background-color: #006287;
+  color: #FEFAEA;
+  display: flex;
+  justify-content: space-around; }
+  footer div {
+    margin: 20px; }
+    footer div h4 {
+      font-family: dinB;
+      font-size: 1.5rem; }
+    footer div:nth-child(3) p {
+      margin: 10px 20px 0 0;
+      text-align: justify;
+      font-family: dinReg;
+      font-size: 1.3rem; }
+      footer div:nth-child(3) p span {
+        font-family: dinB;
+        color: #FEFAEA;
+        background-color: #CE3938;
+        border-radius: 50%; }
+
+.rrss {
+  text-align: center; }
+
+.rrssIcons {
+  display: flex;
+  justify-content: center; }
+  .rrssIcons ul li {
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 25px;
+    line-height: 50px;
+    background-color: #CE3938;
+    color: #FEFAEA;
+    border-radius: 25%;
+    border: 1px solid #FEFAEA;
+    transition: 0.6s; }
+    .rrssIcons ul li:hover {
+      background-color: #FEFAEA;
+      color: #CE3938; }
+    .rrssIcons ul li a {
+      padding: 10px 12px 10px 12px;
+      color: #FEFAEA;
+      transition: 0.6s; }
+      .rrssIcons ul li a:hover {
+        color: #CE3938; }
