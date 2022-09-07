@@ -3,7 +3,7 @@
 @import "../base/generales";
 
 .hero {
-    @include size (100%, 80vh);
+    @include size (100%, 70vh);
     background-image: url("../img/crispines-hero.JPG");
     background-position: center;
     background-size: cover;
@@ -22,10 +22,12 @@
 .mision, .dondeVamos, .nosotres {
     background-color: $color-beige;
     color: $color-blue;
+    padding: 50px 50px 20px 50px;
     h2 {
         color: $color-red;
         font-family: olivier;
         font-size: 3rem;
+        margin-bottom: 30px;
     }
     p {
         font-family: dinReg;
@@ -36,6 +38,7 @@
 .mision {
     text-align: center;
     p {
+        padding: 0 200px;
         span {
             font-family: dinB;
         }
@@ -43,8 +46,9 @@
     div {
         display: flex;
         justify-content: center;
-        margin: 0 5px;
+        margin: 60px 0;
         div {
+            margin: 0 5px;
             img {
                 @include size (300px, 200px);
             }
@@ -52,31 +56,42 @@
     }
 }
 
-.dondeVamos {
-    div {
-        display: flex;
-        img {
-            @include size (500px, 350px);
-        }
-    }
+.dondeVamos1 {
+    display: flex;
+    margin-bottom: 50px;
     p {
+        text-align: justify;
+        padding-right: 60px;
+    }
+    img {
+        @include size (500px, 350px);
+    }
+}
+
+.dondeVamos {
+    p {
+        margin-bottom: 50px;
         span {
             color: $color-red;
+            font-family: dinB;
         }
     }
 }
 
 .imgCarousel {
-    @include size (1326px, 350px);
+    @include size (1300px, 350px);
 }
 
 .nosotres {
     div {
         display: flex;
+        padding-bottom: 50px;
         img {
             @include size (500px, 350px);
         }
         p {
+            text-align: justify;
+            padding-left: 60px;
             a {
                 color: $color-blue;
                 &:hover {

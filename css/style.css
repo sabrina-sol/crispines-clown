@@ -108,7 +108,7 @@ nav {
 
 .hero {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   background-image: url("../img/crispines-hero.JPG");
   background-position: center;
   background-size: cover;
@@ -124,49 +124,66 @@ nav {
 
 .mision, .dondeVamos, .nosotres {
   background-color: #FEFAEA;
-  color: #006287; }
+  color: #006287;
+  padding: 50px 50px 20px 50px; }
   .mision h2, .dondeVamos h2, .nosotres h2 {
     color: #CE3938;
     font-family: olivier;
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin-bottom: 30px; }
   .mision p, .dondeVamos p, .nosotres p {
     font-family: dinReg;
     font-size: 2rem; }
 
 .mision {
   text-align: center; }
-  .mision p span {
-    font-family: dinB; }
+  .mision p {
+    padding: 0 200px; }
+    .mision p span {
+      font-family: dinB; }
   .mision div {
     display: flex;
     justify-content: center;
-    margin: 0 5px; }
-    .mision div div img {
-      width: 300px;
-      height: 200px; }
+    margin: 60px 0; }
+    .mision div div {
+      margin: 0 5px; }
+      .mision div div img {
+        width: 300px;
+        height: 200px; }
 
-.dondeVamos div {
-  display: flex; }
-  .dondeVamos div img {
+.dondeVamos1 {
+  display: flex;
+  margin-bottom: 50px; }
+  .dondeVamos1 p {
+    text-align: justify;
+    padding-right: 60px; }
+  .dondeVamos1 img {
     width: 500px;
     height: 350px; }
 
-.dondeVamos p span {
-  color: #CE3938; }
+.dondeVamos p {
+  margin-bottom: 50px; }
+  .dondeVamos p span {
+    color: #CE3938;
+    font-family: dinB; }
 
 .imgCarousel {
-  width: 1326px;
+  width: 1300px;
   height: 350px; }
 
 .nosotres div {
-  display: flex; }
+  display: flex;
+  padding-bottom: 50px; }
   .nosotres div img {
     width: 500px;
     height: 350px; }
-  .nosotres div p a {
-    color: #006287; }
-    .nosotres div p a:hover {
-      color: #CE3938; }
+  .nosotres div p {
+    text-align: justify;
+    padding-left: 60px; }
+    .nosotres div p a {
+      color: #006287; }
+      .nosotres div p a:hover {
+        color: #CE3938; }
 
 * {
   margin: 0;
@@ -199,13 +216,13 @@ nav {
 
 footer {
   width: 100%;
-  padding: 10px 0 30px 0;
+  padding: 10px 50px 30px 50px;
   background-color: #006287;
   color: #FEFAEA;
   display: flex;
   justify-content: space-around; }
   footer div {
-    margin: 20px; }
+    margin: 20px 30px; }
     footer div h4 {
       font-family: dinB;
       font-size: 1.5rem; }
@@ -214,37 +231,42 @@ footer {
       text-align: justify;
       font-family: dinReg;
       font-size: 1.3rem; }
-      footer div:nth-child(3) p span {
-        font-family: dinB;
-        color: #FEFAEA;
-        background-color: #CE3938;
-        border-radius: 50%; }
+
+.highlight {
+  font-family: dinB;
+  color: #FEFAEA;
+  background-color: #CE3938;
+  border-radius: 30px;
+  padding: 3px 8px 5px 8px; }
 
 .rrss {
-  text-align: center; }
+  text-align: center;
+  margin-right: 60px; }
 
 .rrssIcons {
   display: flex;
   justify-content: center; }
-  .rrssIcons ul li {
-    display: inline-block;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    margin: 0 5px;
-    font-size: 25px;
-    line-height: 50px;
-    background-color: #CE3938;
-    color: #FEFAEA;
-    border-radius: 25%;
-    border: 1px solid #FEFAEA;
-    transition: 0.6s; }
-    .rrssIcons ul li:hover {
-      background-color: #FEFAEA;
-      color: #CE3938; }
-    .rrssIcons ul li a {
-      padding: 10px 12px 10px 12px;
+  .rrssIcons ul {
+    display: flex; }
+    .rrssIcons ul li {
+      display: inline-block;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      margin: 0 5px;
+      font-size: 25px;
+      line-height: 50px;
+      background-color: #CE3938;
       color: #FEFAEA;
+      border-radius: 25%;
+      border: 1px solid #FEFAEA;
       transition: 0.6s; }
-      .rrssIcons ul li a:hover {
+      .rrssIcons ul li:hover {
+        background-color: #FEFAEA;
         color: #CE3938; }
+      .rrssIcons ul li a {
+        padding: 10px 12px 10px 12px;
+        color: #FEFAEA;
+        transition: 0.6s; }
+        .rrssIcons ul li a:hover {
+          color: #CE3938; }
