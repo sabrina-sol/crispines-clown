@@ -28,10 +28,18 @@
         font-family: olivier;
         font-size: 3rem;
         margin-bottom: 30px;
+        &::selection {
+            color: $color-beige;
+            background-color: $color-blue;
+        }
     }
     p {
         font-family: dinReg;
         font-size: 2rem;
+        &::selection {
+            color: $color-beige;
+            background-color: $color-red;
+        }
     }
 }
 
@@ -41,6 +49,10 @@
         padding: 0 200px;
         span {
             font-family: dinB;
+            &::selection {
+                color: $color-beige;
+                background-color: $color-red;
+            }
         }
     }
     div {
@@ -74,12 +86,17 @@
         span {
             color: $color-red;
             font-family: dinB;
+            &::selection {
+                color: $color-beige;
+                background-color: $color-blue;
+            }
         }
     }
 }
 
 .imgCarousel {
-    @include size (1300px, 350px);
+    @include size (1300px, 500px);
+    object-fit: cover;
 }
 
 .nosotres {
@@ -96,6 +113,10 @@
                 color: $color-blue;
                 &:hover {
                     color: $color-red;
+                }
+                &::selection {
+                    color: $color-beige;
+                    background-color: $color-red;
                 }
             }
         }

@@ -2,25 +2,35 @@
 @import "../base/mixin";
 @import "../base/generales";
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-red;
-    @include size (100%, 10vh);
-    ul {
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    nav {
         display: flex;
-        li {
-            list-style: none;
-            margin: 0 30px;
-            a {
-                text-decoration: none;
-                color: $color-beige;
-                font-family: dinMed;
-                font-size: 1.8rem;
-                &:hover {
+        justify-content: center;
+        align-items: center;
+        background-color: $color-red;
+        @include size (100%, 8vh);
+        ul {
+            display: flex;
+            margin: 0;
+            li {
+                list-style: none;
+                margin: 0 30px;
+                a {
+                    text-decoration: none;
                     color: $color-beige;
-                    font-family: dinBlack;
+                    font-family: dinMed;
+                    font-size: 1.5rem;
+                    &:hover {
+                        color: $color-beige;
+                        font-family: dinBlack;
+                    }
+                    &::selection {
+                        color: $color-beige;
+                        background-color: $color-blue;
+                    }
                 }
             }
         }

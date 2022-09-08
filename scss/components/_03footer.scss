@@ -14,6 +14,10 @@ footer {
         h4 {
             font-family: dinB;
             font-size: 1.5rem;
+            &::selection {
+                color: $color-blue;
+                background-color: $color-beige;
+            }
         }
         &:nth-child(3) {
             p {
@@ -21,6 +25,10 @@ footer {
                 text-align: justify;
                 font-family: dinReg;
                 font-size: 1.3rem;
+                &::selection {
+                    color: $color-blue;
+                    background-color: $color-beige;
+                }
             }
         }
     }
@@ -32,6 +40,10 @@ footer {
     background-color: $color-red;
     border-radius: 30px;
     padding: 3px 8px 5px 8px;
+    &::selection {
+        color: $color-blue;
+        background-color: $color-beige;
+    }
 }
 
 .rrss {
@@ -44,6 +56,7 @@ footer {
     justify-content: center;
     ul {
         display: flex;
+        padding: 0;
         li {
             display: inline-block;
             text-align: center;
