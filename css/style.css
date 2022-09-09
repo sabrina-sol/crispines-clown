@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +28,9 @@
   src: url(../fonts/DINPRO-REGULAR.OTF);
   font-family: dinReg; }
 
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -85,6 +89,7 @@ header {
             color: #FEFAEA;
             background-color: #006287; }
 
+/* ---------------------------------- MAIN ---------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -114,6 +119,7 @@ header {
   src: url(../fonts/DINPRO-REGULAR.OTF);
   font-family: dinReg; }
 
+/* ---------------------------------- HERO ---------------------------------- */
 .hero {
   width: 100%;
   height: 70vh;
@@ -149,6 +155,7 @@ header {
       color: #FEFAEA;
       background-color: #CE3938; }
 
+/* --------------------------------- MISIÓN --------------------------------- */
 .mision {
   text-align: center; }
   .mision p {
@@ -168,6 +175,7 @@ header {
         width: 300px;
         height: 200px; }
 
+/* ----------------------------- ¿A DÓNDE VAMOS? ---------------------------- */
 .dondeVamos1 {
   display: flex;
   margin-bottom: 50px; }
@@ -192,9 +200,10 @@ header {
   height: 500px;
   object-fit: cover; }
 
+/* -------------------------------- NOSOTRES -------------------------------- */
 .nosotres div {
   display: flex;
-  padding-bottom: 50px; }
+  padding-bottom: 80px; }
   .nosotres div img {
     width: 500px;
     height: 350px; }
@@ -209,6 +218,9 @@ header {
         color: #FEFAEA;
         background-color: #CE3938; }
 
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
