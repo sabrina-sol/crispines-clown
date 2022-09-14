@@ -5,14 +5,13 @@
 @import "../base/variables";
 @import "../base/mixin";
 @import "../base/generales";
+@import "../base/extends";
 
 footer {
     width: 100%;
     padding: 10px 50px 30px 50px;
-    background-color: $color-blue;
-    color: $color-beige;
+    @extend %beigeBackBlue;
     display: grid;
-    /*grid-template-rows: 1;*/
     grid-template-columns: repeat(3, 1fr);
     div {
         margin: 20px 10px;
@@ -20,8 +19,7 @@ footer {
             font-family: dinB;
             font-size: 1.5rem;
             &::selection {
-                color: $color-blue;
-                background-color: $color-beige;
+                @extend %blueBackBeige;
             }
         }
         &:nth-child(3) {
@@ -30,8 +28,7 @@ footer {
                 font-family: dinReg;
                 font-size: 1.3rem;
                 &::selection {
-                    color: $color-blue;
-                    background-color: $color-beige;
+                    @extend %blueBackBeige;
                 }
             }
         }
@@ -54,6 +51,7 @@ footer {
             }
         }
         &:nth-child(2) {
+            margin-left: 30px;
             h4 {
                 font-family: olivier;
                 font-size: 2rem;
@@ -64,8 +62,7 @@ footer {
                 font-size: 1.1rem;
                 text-align: center;
                 &::selection {
-                    color: $color-blue;
-                    background-color: $color-beige;
+                    @extend %blueBackBeige;
                 }
                 a {
                     text-decoration: none;
@@ -74,8 +71,7 @@ footer {
                         font-family: dinMed;
                     }
                     &::selection {
-                        color: $color-blue;
-                        background-color: $color-beige;
+                        @extend %blueBackBeige;
                     }
                 }
             }
@@ -101,14 +97,13 @@ footer {
             margin: 0 5px;
             font-size: 25px;
             line-height: 50px;
-            background-color: $color-red;
-            color: $color-beige;
+            @extend %beigeBackRed;
             border-radius: 25%;
             border: 1px solid $color-beige;
             transition: 0.6s;
             &:hover {
-                background-color: $color-beige;
                 color: $color-red;
+                background-color: $color-beige;
             }
             a {
                 padding: 10px 12px 10px 12px;
@@ -124,12 +119,10 @@ footer {
 
 .highlight {
     font-family: dinB;
-    color: $color-beige;
-    background-color: $color-red;
+    @extend %beigeBackRed;
     border-radius: 30px;
     padding: 3px 8px 5px 8px;
     &::selection {
-        color: $color-blue;
-        background-color: $color-beige;
+        @extend %blueBackBeige;
     }
 }

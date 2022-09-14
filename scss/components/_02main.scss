@@ -1,8 +1,11 @@
-/* ---------------------------------- MAIN ---------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                    MAIN                                    */
+/* -------------------------------------------------------------------------- */
 
 @import "../base/variables";
 @import "../base/mixin";
 @import "../base/generales";
+@import "../base/extends";
 
 /* ---------------------------------- HERO ---------------------------------- */
 
@@ -24,8 +27,7 @@
 }
 
 .mision, .dondeVamos, .nosotres {
-    background-color: $color-beige;
-    color: $color-blue;
+    @extend %blueBackBeige;
     padding: 50px 50px 20px 50px;
     h2 {
         color: $color-red;
@@ -33,16 +35,14 @@
         font-size: 3rem;
         margin-bottom: 30px;
         &::selection {
-            color: $color-beige;
-            background-color: $color-blue;
+            @extend %beigeBackBlue;
         }
     }
     p {
         font-family: dinReg;
         font-size: 2rem;
         &::selection {
-            color: $color-beige;
-            background-color: $color-red;
+            @extend %beigeBackRed;
         }
     }
 }
@@ -56,8 +56,7 @@
         span {
             font-family: dinB;
             &::selection {
-                color: $color-beige;
-                background-color: $color-red;
+                @extend %beigeBackRed;
             }
         }
     }
@@ -95,8 +94,7 @@
             color: $color-red;
             font-family: dinB;
             &::selection {
-                color: $color-beige;
-                background-color: $color-blue;
+                @extend %beigeBackBlue;
             }
         }
     }
@@ -125,8 +123,7 @@
                     color: $color-red;
                 }
                 &::selection {
-                    color: $color-beige;
-                    background-color: $color-red;
+                    @extend %beigeBackRed;
                 }
             }
         }
