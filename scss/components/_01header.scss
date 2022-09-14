@@ -16,6 +16,14 @@ header {
         align-items: center;
         background-color: $color-red;
         @include size (100%, 8vh);
+        div {
+            /*@include size (70px, 31px);
+            background-color: $color-beige;
+            border-radius: 20px;*/
+            img {
+                @include size (75px, 60px);
+            }
+        }
         ul {
             display: flex;
             margin: 0;

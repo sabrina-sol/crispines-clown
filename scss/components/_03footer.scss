@@ -11,10 +11,11 @@ footer {
     padding: 10px 50px 30px 50px;
     background-color: $color-blue;
     color: $color-beige;
-    display:flex;
-    justify-content: space-around;
+    display: grid;
+    /*grid-template-rows: 1;*/
+    grid-template-columns: repeat(3, 1fr);
     div {
-        margin: 20px 30px;
+        margin: 20px 10px;
         h4 {
             font-family: dinB;
             font-size: 1.5rem;
@@ -26,7 +27,6 @@ footer {
         &:nth-child(3) {
             p {
                 margin: 10px 20px 0 0;
-                text-align: justify;
                 font-family: dinReg;
                 font-size: 1.3rem;
                 &::selection {
@@ -38,15 +38,48 @@ footer {
     }
 }
 
-.highlight {
-    font-family: dinB;
-    color: $color-beige;
-    background-color: $color-red;
-    border-radius: 30px;
-    padding: 3px 8px 5px 8px;
-    &::selection {
-        color: $color-blue;
-        background-color: $color-beige;
+.logoFooter {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    div {
+        &:nth-child(1) {
+            background-color: $color-beige;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            @include size (130px, 130px);
+            img {
+                @include size (127px, 100px);
+            }
+        }
+        &:nth-child(2) {
+            h4 {
+                font-family: olivier;
+                font-size: 2rem;
+                text-align: center;
+            }
+            h3 {
+                font-family: dinLi;
+                font-size: 1.1rem;
+                text-align: center;
+                &::selection {
+                    color: $color-blue;
+                    background-color: $color-beige;
+                }
+                a {
+                    text-decoration: none;
+                    color: $color-beige;
+                    &:hover {
+                        font-family: dinMed;
+                    }
+                    &::selection {
+                        color: $color-blue;
+                        background-color: $color-beige;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -86,5 +119,17 @@ footer {
                 }
             }
         }
+    }
+}
+
+.highlight {
+    font-family: dinB;
+    color: $color-beige;
+    background-color: $color-red;
+    border-radius: 30px;
+    padding: 3px 8px 5px 8px;
+    &::selection {
+        color: $color-blue;
+        background-color: $color-beige;
     }
 }

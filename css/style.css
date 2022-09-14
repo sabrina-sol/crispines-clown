@@ -71,6 +71,13 @@ header {
     background-color: #CE3938;
     width: 100%;
     height: 8vh; }
+    header nav div {
+      /*@include size (70px, 31px);
+            background-color: $color-beige;
+            border-radius: 20px;*/ }
+      header nav div img {
+        width: 75px;
+        height: 60px; }
     header nav ul {
       display: flex;
       margin: 0; }
@@ -255,10 +262,11 @@ footer {
   padding: 10px 50px 30px 50px;
   background-color: #006287;
   color: #FEFAEA;
-  display: flex;
-  justify-content: space-around; }
+  display: grid;
+  /*grid-template-rows: 1;*/
+  grid-template-columns: repeat(3, 1fr); }
   footer div {
-    margin: 20px 30px; }
+    margin: 20px 10px; }
     footer div h4 {
       font-family: dinB;
       font-size: 1.5rem; }
@@ -267,22 +275,45 @@ footer {
         background-color: #FEFAEA; }
     footer div:nth-child(3) p {
       margin: 10px 20px 0 0;
-      text-align: justify;
       font-family: dinReg;
       font-size: 1.3rem; }
       footer div:nth-child(3) p::selection {
         color: #006287;
         background-color: #FEFAEA; }
 
-.highlight {
-  font-family: dinB;
-  color: #FEFAEA;
-  background-color: #CE3938;
-  border-radius: 30px;
-  padding: 3px 8px 5px 8px; }
-  .highlight::selection {
-    color: #006287;
-    background-color: #FEFAEA; }
+.logoFooter {
+  display: flex;
+  align-items: center;
+  margin: 0; }
+  .logoFooter div:nth-child(1) {
+    background-color: #FEFAEA;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 130px; }
+    .logoFooter div:nth-child(1) img {
+      width: 127px;
+      height: 100px; }
+  .logoFooter div:nth-child(2) h4 {
+    font-family: olivier;
+    font-size: 2rem;
+    text-align: center; }
+  .logoFooter div:nth-child(2) h3 {
+    font-family: dinLi;
+    font-size: 1.1rem;
+    text-align: center; }
+    .logoFooter div:nth-child(2) h3::selection {
+      color: #006287;
+      background-color: #FEFAEA; }
+    .logoFooter div:nth-child(2) h3 a {
+      text-decoration: none;
+      color: #FEFAEA; }
+      .logoFooter div:nth-child(2) h3 a:hover {
+        font-family: dinMed; }
+      .logoFooter div:nth-child(2) h3 a::selection {
+        color: #006287;
+        background-color: #FEFAEA; }
 
 .rrss {
   text-align: center;
@@ -316,3 +347,13 @@ footer {
         transition: 0.6s; }
         .rrssIcons ul li a:hover {
           color: #CE3938; }
+
+.highlight {
+  font-family: dinB;
+  color: #FEFAEA;
+  background-color: #CE3938;
+  border-radius: 30px;
+  padding: 3px 8px 5px 8px; }
+  .highlight::selection {
+    color: #006287;
+    background-color: #FEFAEA; }
