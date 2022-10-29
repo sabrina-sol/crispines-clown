@@ -64,7 +64,7 @@
   color: #006287;
   background-color: #FEFAEA; }
 
-header nav ul li a::selection, .mision h2::selection, .dondeVamos h2::selection, .nosotres h2::selection, .dondeVamos p span::selection, footer {
+.containerHeader nav ul li a::selection, .mision h2::selection, .dondeVamos h2::selection, .nosotres h2::selection, .dondeVamos p span::selection, footer {
   color: #FEFAEA;
   background-color: #006287; }
 
@@ -76,30 +76,38 @@ header {
   position: sticky;
   top: 0;
   z-index: 1; }
-  header nav {
+
+.containerHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #CE3938;
+  width: 100%;
+  height: 20%; }
+  .containerHeader nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #CE3938;
-    width: 100%;
-    height: 8vh; }
-    header nav div img {
-      width: 75px;
-      height: 60px; }
-    header nav ul {
-      display: flex;
-      margin: 0; }
-      header nav ul li {
-        list-style: none;
-        margin: 0 30px; }
-        header nav ul li a {
-          text-decoration: none;
+    margin: 0; }
+    .containerHeader nav ul li {
+      list-style: none;
+      margin: 0 30px; }
+      .containerHeader nav ul li a {
+        text-decoration: none;
+        color: #FEFAEA;
+        font-family: dinMed;
+        font-size: 1.5rem; }
+        .containerHeader nav ul li a:hover {
           color: #FEFAEA;
-          font-family: dinMed;
-          font-size: 1.5rem; }
-          header nav ul li a:hover {
-            color: #FEFAEA;
-            font-family: dinBlack; }
+          font-family: dinBlack; }
+
+.logoHeader img {
+  width: 75px;
+  height: 60px; }
+
+.navToogle {
+  display: none; }
+
+.hidden {
+  display: none; }
 
 /* -------------------------------------------------------------------------- */
 /*                                    MAIN                                    */
@@ -137,7 +145,7 @@ header {
   color: #006287;
   background-color: #FEFAEA; }
 
-header nav ul li a::selection, .mision h2::selection, .dondeVamos h2::selection, .nosotres h2::selection, .dondeVamos p span::selection, footer {
+.containerHeader nav ul li a::selection, .mision h2::selection, .dondeVamos h2::selection, .nosotres h2::selection, .dondeVamos p span::selection, footer {
   color: #FEFAEA;
   background-color: #006287; }
 
@@ -263,7 +271,7 @@ header nav ul li a::selection, .mision h2::selection, .dondeVamos h2::selection,
   color: #006287;
   background-color: #FEFAEA; }
 
-header nav ul li a::selection, .mision h2::selection, .dondeVamos h2::selection, .nosotres h2::selection, .dondeVamos p span::selection, footer {
+.containerHeader nav ul li a::selection, .mision h2::selection, .dondeVamos h2::selection, .nosotres h2::selection, .dondeVamos p span::selection, footer {
   color: #FEFAEA;
   background-color: #006287; }
 
@@ -351,3 +359,240 @@ footer {
   font-family: dinB;
   border-radius: 30px;
   padding: 3px 8px 5px 8px; }
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  src: url(../fonts/olivier_demo.ttf);
+  font-family: olivier; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BLACK.OTF);
+  font-family: dinBlack; }
+
+@font-face {
+  src: url(../fonts/DINPRO-BOLD.OTF);
+  font-family: dinB; }
+
+@font-face {
+  src: url(../fonts/DINPRO-LIGHT.OTF);
+  font-family: dinLi; }
+
+@font-face {
+  src: url(../fonts/DINPRO-MEDIUM.OTF);
+  font-family: dinMed; }
+
+@font-face {
+  src: url(../fonts/DINPRO-REGULAR.OTF);
+  font-family: dinReg; }
+
+/* --------------------------------- HEADER --------------------------------- */
+@media screen and (max-width: 840px) {
+  .containerHeader {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 60px;
+    transition: height 0.7s ease-in-out; }
+    .containerHeader nav {
+      width: 100%;
+      overflow: hidden; }
+      .containerHeader nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px; }
+        .containerHeader nav ul li {
+          margin: 10px 20px; }
+  .logoHeader {
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .navToogle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem; }
+    .navToogle img {
+      width: 30px;
+      height: 30px;
+      filter: invert(100%) sepia(88%) saturate(254%) hue-rotate(7deg) brightness(106%) contrast(102%); }
+  .openMenu {
+    height: 300px; } }
+
+@media screen and (max-width: 420px) {
+  header {
+    position: static; }
+  .openMenu {
+    height: 100vh; } }
+
+/* ---------------------------------- MAIN ---------------------------------- */
+@media screen and (max-width: 1140px) {
+  .mision p, .dondeVamos p, .nosotres p {
+    font-size: 1.6rem; }
+  .mision p {
+    padding: 0 140px; }
+  .imgCarousel {
+    width: 1038px;
+    height: 350px; } }
+
+@media screen and (max-width: 1022px) {
+  .dondeVamos1 {
+    margin-bottom: 20px; }
+    .dondeVamos1 img {
+      width: 450px;
+      height: 300px; } }
+
+@media screen and (max-width: 950px) {
+  .mision h2, .dondeVamos h2, .nosotres h2 {
+    font-size: 2.5rem; }
+  .mision p, .dondeVamos p, .nosotres p {
+    font-size: 1.3rem; }
+  .mision div {
+    flex-direction: column;
+    align-items: center; }
+    .mision div div {
+      margin: 5px; }
+      .mision div div img {
+        width: 450px;
+        height: 250px;
+        object-fit: cover; }
+  .dondeVamos1 img {
+    width: 390px;
+    height: 250px; }
+  .nosotres div img {
+    width: 390px;
+    height: 250px; } }
+
+@media screen and (max-width: 800px) {
+  .mision, .dondeVamos, .nosotres {
+    text-align: center; }
+  .mision p {
+    padding: 0 60px; }
+  .dondeVamos1 {
+    flex-direction: column;
+    align-items: center; }
+    .dondeVamos1 p {
+      padding: 0; }
+    .dondeVamos1 img {
+      margin-bottom: 20px; }
+  .imgCarousel {
+    height: 250px; }
+  .nosotres div {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px; }
+    .nosotres div p {
+      padding: 0;
+      margin: 40px 0 0 0; } }
+
+@media screen and (max-width: 600px) {
+  .dondeVamos {
+    padding: 0; }
+    .dondeVamos h2 {
+      padding-top: 25px; }
+    .dondeVamos p {
+      padding: 0 30px; }
+  .mision, .nosotres {
+    padding: 20px 30px 20px 30px; }
+    .mision h2, .nosotres h2 {
+      padding-top: 25px; }
+  .mision p {
+    padding: 0; }
+  .mision div div img {
+    width: 390px;
+    height: 200px; } }
+
+@media screen and (max-width: 420px) {
+  .mision h2, .dondeVamos h2, .nosotres h2 {
+    font-size: 2rem; }
+  .mision p, .dondeVamos p, .nosotres p {
+    font-size: 1rem; }
+  .mision {
+    padding: 20px 25px; }
+    .mision div {
+      margin: 50px 0 25px 0; }
+      .mision div div img {
+        width: 290px;
+        height: 150px; }
+    .mision p {
+      text-align: justify;
+      margin-bottom: 0; }
+  .dondeVamos p {
+    padding: 0 25px;
+    text-align: justify; }
+  .dondeVamos1 img {
+    width: 255px;
+    height: 175px; }
+  .imgCarousel {
+    height: 190px; }
+  .nosotres {
+    padding: 20px 25px; }
+    .nosotres div img {
+      width: 255px;
+      height: 175px; } }
+
+/* --------------------------------- FOOTER --------------------------------- */
+@media screen and (max-width: 1116px) {
+  footer {
+    padding: 10px 40px 20px 40px; }
+    footer div {
+      margin: 20px 5px; }
+      footer div h4 {
+        font-size: 1.3rem; }
+      footer div:nth-child(3) {
+        padding-top: 30px; }
+        footer div:nth-child(3) p {
+          margin: 10px 10px 0 0;
+          font-size: 1rem;
+          line-height: 30px; }
+  .logoFooter div:nth-child(1) {
+    width: 110px;
+    height: 110px; }
+    .logoFooter div:nth-child(1) img {
+      width: 107px;
+      height: 80px; }
+  .logoFooter div:nth-child(2) h4 {
+    font-size: 1.8rem; }
+  .logoFooter div:nth-child(2) h3 {
+    font-size: 0.9rem; }
+  .rrss {
+    padding-top: 30px; }
+  .rrssIcons ul li {
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+    line-height: 36px; }
+    .rrssIcons ul li a {
+      padding: 10px 10px 10px 10px; } }
+
+@media screen and (max-width: 926px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px; }
+    footer div {
+      margin: 10px; }
+      footer div:nth-child(3) {
+        text-align: center;
+        padding: 0 200px; }
+        footer div:nth-child(3) p {
+          margin: 20px 0 0 0; }
+  .rrss {
+    margin-right: 0; }
+    .rrss div {
+      margin-top: 20px; } }
+
+@media screen and (max-width: 730px) {
+  footer div:nth-child(3) {
+    padding: 0 80px; } }
+
+@media screen and (max-width: 500px) {
+  footer div:nth-child(3) {
+    padding: 0 40px; } }

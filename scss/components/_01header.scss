@@ -11,17 +11,14 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+.containerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-red;
+    @include size (100%, 20%);
     nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-red;
-        @include size (100%, 8vh);
-        div {
-            img {
-                @include size (75px, 60px);
-            }
-        }
         ul {
             display: flex;
             margin: 0;
@@ -44,4 +41,18 @@ header {
             }
         }
     }
+}
+
+.logoHeader {
+    img {
+        @include size (75px, 60px);
+    }
+}
+
+.navToogle {
+    display: none;
+}
+
+.hidden {
+    display: none;
 }

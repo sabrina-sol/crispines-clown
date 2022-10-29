@@ -1,0 +1,338 @@
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+
+@import "../base/generales";
+@import "../base/variables";
+@import "../base/mixin";
+
+/* --------------------------------- HEADER --------------------------------- */
+
+@media screen and (max-width: 840px) {
+    .containerHeader {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        @include size (100%, 60px);
+        transition: height 0.7s ease-in-out;
+        nav {
+            width: 100%;
+            overflow: hidden;
+            ul {
+                flex-direction: column;
+                text-align: center;
+                margin-bottom: 10px;
+                li {
+                    margin: 10px 20px;
+                }
+            }
+        }
+    }
+    .logoHeader {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .navToogle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        img {
+            @include size (30px, 30px);
+            filter: invert(100%) sepia(88%) saturate(254%) hue-rotate(7deg) brightness(106%) contrast(102%);
+        }
+    }
+    .openMenu {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header {
+        position: static;
+    }
+    .openMenu {
+        height: 100vh;
+    }
+}
+
+/* ---------------------------------- MAIN ---------------------------------- */
+
+
+@media screen and (max-width: 1140px) {
+    .mision, .dondeVamos, .nosotres {
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    .mision {
+        p {
+            padding: 0 140px;
+        }
+    }
+    .imgCarousel {
+        @include size (1038px, 350px);
+    }
+}
+
+@media screen and (max-width: 1022px) {
+    .dondeVamos1 {
+        margin-bottom: 20px;
+        img {
+            @include size (450px, 300px);
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .mision, .dondeVamos, .nosotres {
+        h2 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    .mision {
+        div {
+            flex-direction: column;
+            align-items: center;
+            div {
+                margin: 5px;
+                img {
+                    @include size (450px, 250px);
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .dondeVamos1 {
+        img {
+            @include size (390px, 250px);
+        }
+    }
+    .nosotres {
+        div {
+            img {
+                @include size (390px, 250px);
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mision, .dondeVamos, .nosotres {
+        text-align: center;
+    }
+    .mision {
+        p {
+            padding: 0 60px;
+        }
+    }
+    .dondeVamos1 {
+        flex-direction: column;
+        align-items: center;
+        p {
+            padding: 0;
+        }
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    .imgCarousel {
+        height: 250px;
+    }
+    .nosotres {
+        div {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 40px;
+            p {
+                padding: 0;
+                margin: 40px 0 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dondeVamos {
+        padding: 0;
+        h2 {
+            padding-top: 25px;
+        }
+        p {
+            padding: 0 30px;
+        }
+    }
+    .mision, .nosotres {
+        padding: 20px 30px 20px 30px;
+        h2 {
+            padding-top: 25px;
+        }
+    }
+    .mision {
+        p {
+            padding: 0;
+        }
+        div {
+            div {
+                img {
+                    @include size (390px, 200px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .mision, .dondeVamos, .nosotres {
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .mision {
+        padding: 20px 25px;
+        div {
+            margin: 50px 0 25px 0;
+            div {
+                img {
+                    @include size (290px, 150px);
+                }
+            }
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 0;
+        }
+    }
+    .dondeVamos {
+        p {
+            padding: 0 25px;
+            text-align: justify;
+        }
+    }
+    .dondeVamos1 {
+        img {
+            @include size (255px, 175px);
+        }
+    }
+    .imgCarousel {
+        height: 190px;
+    }
+    .nosotres {
+        padding: 20px 25px;
+        div {
+            img {
+                @include size (255px, 175px);
+            }
+        }
+        
+    }
+}
+
+
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+@media screen and (max-width: 1116px) {
+    footer {
+        padding: 10px 40px 20px 40px;
+        div {
+            margin: 20px 5px;
+            h4 {
+                font-size: 1.3rem;
+            }
+            &:nth-child(3) {
+                padding-top: 30px;
+                p {
+                    margin: 10px 10px 0 0;
+                    font-size: 1rem;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    .logoFooter {
+        div {
+            &:nth-child(1) {
+                @include size (110px, 110px);
+                img {
+                    @include size (107px, 80px);
+                }
+            }
+            &:nth-child(2) {
+                h4 {
+                    font-size: 1.8rem;
+                }
+                h3 {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    .rrss {
+        padding-top: 30px;
+    }
+    .rrssIcons {
+        ul {
+            li {
+                @include size (40px, 40px);
+                font-size: 21px;
+                line-height: 36px;
+                a {
+                    padding: 10px 10px 10px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 926px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 20px;
+        div {
+            margin: 10px;
+            &:nth-child(3) {
+                text-align: center;
+                padding: 0 200px;
+                p {
+                    margin: 20px 0 0 0;
+                }
+            }
+        }
+    }
+    .rrss {
+        margin-right: 0;
+        div {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    footer {
+        div {
+            &:nth-child(3) {
+                padding: 0 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        div {
+            &:nth-child(3) {
+                padding: 0 40px;
+            }
+        }
+    }
+}
