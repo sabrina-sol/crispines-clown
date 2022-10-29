@@ -235,6 +235,9 @@ header {
       .nosotres div p a:hover {
         color: #CE3938; }
 
+.scrollTop {
+  display: none; }
+
 /* -------------------------------------------------------------------------- */
 /*                                   FOOTER                                   */
 /* -------------------------------------------------------------------------- */
@@ -509,10 +512,12 @@ footer {
     height: 200px; } }
 
 @media screen and (max-width: 420px) {
+  html {
+    scroll-behavior: smooth; }
   .mision h2, .dondeVamos h2, .nosotres h2 {
-    font-size: 2rem; }
+    font-size: 2.3rem; }
   .mision p, .dondeVamos p, .nosotres p {
-    font-size: 1rem; }
+    font-size: 1.3rem; }
   .mision {
     padding: 20px 25px; }
     .mision div {
@@ -535,7 +540,23 @@ footer {
     padding: 20px 25px; }
     .nosotres div img {
       width: 255px;
-      height: 175px; } }
+      height: 175px; }
+  .scrollTop {
+    width: 50px;
+    height: 50px;
+    background-color: #CE3938;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .scrollTop img {
+      width: 40px;
+      height: 40px;
+      filter: invert(100%) sepia(88%) saturate(254%) hue-rotate(7deg) brightness(106%) contrast(102%); } }
 
 /* --------------------------------- FOOTER --------------------------------- */
 @media screen and (max-width: 1116px) {
