@@ -75,7 +75,7 @@
 header {
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 2; }
 
 .containerHeader {
   display: flex;
@@ -406,7 +406,8 @@ footer {
     transition: height 0.7s ease-in-out; }
     .containerHeader nav {
       width: 100%;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
       .containerHeader nav ul {
         flex-direction: column;
         text-align: center;
@@ -431,6 +432,8 @@ footer {
 @media screen and (max-width: 420px) {
   header {
     position: static; }
+  nav {
+    top: 20%; }
   .openMenu {
     height: 100vh; } }
 
@@ -532,21 +535,22 @@ footer {
     padding: 0 25px;
     text-align: justify; }
   .dondeVamos1 img {
-    width: 255px;
-    height: 175px; }
+    width: 350px;
+    height: 220px; }
   .imgCarousel {
     height: 190px; }
   .nosotres {
     padding: 20px 25px; }
     .nosotres div img {
-      width: 255px;
-      height: 175px; }
+      width: 350px;
+      height: 220px; }
   .scrollTop {
     width: 50px;
     height: 50px;
     background-color: #CE3938;
     opacity: 0.9;
     position: fixed;
+    z-index: 1;
     bottom: 10px;
     right: 10px;
     border-radius: 6px;
@@ -556,7 +560,18 @@ footer {
     .scrollTop img {
       width: 40px;
       height: 40px;
-      filter: invert(100%) sepia(88%) saturate(254%) hue-rotate(7deg) brightness(106%) contrast(102%); } }
+      filter: invert(100%) sepia(88%) saturate(254%) hue-rotate(7deg) brightness(106%) contrast(102%); }
+  .hideScroll {
+    position: static;
+    display: none; } }
+
+@media screen and (max-width: 359px) {
+  .dondeVamos1 img {
+    width: 290px;
+    height: 190px; }
+  .nosotres div img {
+    width: 290px;
+    height: 190px; } }
 
 /* --------------------------------- FOOTER --------------------------------- */
 @media screen and (max-width: 1116px) {
