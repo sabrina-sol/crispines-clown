@@ -126,6 +126,15 @@
 }
 
 @media screen and (max-width: 800px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        h1 {
+            padding: 0 20px 60px 20px;
+            text-align: center;
+        }
+    }
     .mision, .dondeVamos, .nosotres {
         text-align: center;
     }
@@ -191,12 +200,14 @@
 }
 
 @media screen and (max-width: 420px) {
-    html {
-        scroll-behavior: smooth;
+    .hero {
+        h1 {
+            padding: 0 20px 30px 20px;
+        }
     }
     .mision, .dondeVamos, .nosotres {
         h2 {
-            font-size: 2.3rem;
+            font-size: 2.4rem;
         }
         p {
             font-size: 1.3rem;
@@ -327,7 +338,7 @@
                 font-size: 21px;
                 line-height: 36px;
                 a {
-                    padding: 10px 10px 10px 10px;
+                    padding: 10px;
                 }
             }
         }

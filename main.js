@@ -22,23 +22,9 @@ for(let navLink of navLi) {
         navIcon.forEach(icon => {
             icon.classList.toggle("hidden");
         })
+        scrollTop.classList.remove("hideScroll");
     });
 };
-
-/* ------------------- Hide scroll-top btn when open menu ------------------- */
-
-
-
-/*if (menu[0].classList("openMenu")) {
-    scrollTop.classList.toggle("hidden")
-}
-
-navToogle.addEventListener ("click", () => {
-    menu[0].classList.toggle("openMenu");
-    navIcon.forEach(icon => {
-        icon.classList.toggle("hidden");
-    })
-});*/
 
 
 

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     src: url(../fonts/olivier_demo.ttf);
     font-family: olivier;

@@ -11,7 +11,7 @@
 
 .hero {
     @include size (100%, 70vh);
-    background-image: url("../img/crispines-hero.JPG");
+    background-image: url("/img/crispines-hero.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
