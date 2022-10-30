@@ -166,7 +166,7 @@ html {
 .hero {
   width: 100%;
   height: 70vh;
-  background-image: url("/img/crispines-hero.JPG");
+  background-image: url(../../img/crispines-hero.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
