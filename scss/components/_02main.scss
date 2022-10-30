@@ -10,19 +10,27 @@
 /* ---------------------------------- HERO ---------------------------------- */
 
 .hero {
-    @include size (100%, 70vh);
-    background-image: url(../../img/crispines-hero.JPG);
+    @include size (100%, 60vh);
+    background-image: url(/img/DSC_0923_recortada.JPG);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
     color: $color-beige;
-    h1 {
-        font-family: olivier;
-        font-size: 3.5rem;
-        margin: 0 0 0 15px;
-        padding: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    div {
+        background-color: rgba(0, 99, 135, 0.6);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        h1 {
+            font-family: olivier;
+            font-size: 4.7rem;
+            margin: 0;
+        }
     }
 }
 

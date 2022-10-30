@@ -134,12 +134,10 @@
 
 @media screen and (max-width: 800px) {
     .hero {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        h1 {
-            padding: 0 20px 60px 20px;
-            text-align: center;
+        div {
+            h1 {
+                font-size: 4.1rem;
+            }
         }
     }
     .mision, .dondeVamos, .nosotres {
@@ -187,6 +185,13 @@
 }
 
 @media screen and (max-width: 600px) {
+    .hero {
+        div {
+            h1 {
+                font-size: 3.2rem;
+            }
+        }
+    }
     .dondeVamos {
         padding: 0;
         h2 {
@@ -223,8 +228,10 @@
 
 @media screen and (max-width: 420px) {
     .hero {
-        h1 {
-            padding: 0 20px 30px 20px;
+        div {
+            h1 {
+                font-size: 2.8rem;
+            }
         }
     }
     .mision, .dondeVamos, .nosotres {
@@ -304,6 +311,14 @@
 }
 
 @media screen and (max-width: 359px) {
+    .hero {
+        div {
+            h1 {
+                font-size: 2.6rem;
+                text-align: center
+            }
+        }
+    }
     .dondeVamos1 {
         img {
             @include size (290px, 190px);
