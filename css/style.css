@@ -166,7 +166,7 @@ html {
 .hero {
   width: 100%;
   height: 60vh;
-  background-image: url(/img/DSC_0923_recortada.JPG);
+  background-image: url(/img/crispines-hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -563,8 +563,10 @@ html {
     padding: 5px 15px 7px 15px; } }
 
 @media screen and (max-width: 420px) {
-  .hero div h1 {
-    font-size: 2.8rem; }
+  .hero {
+    height: 50vh; }
+    .hero div h1 {
+      font-size: 2.8rem; }
   .mision h2, .dondeVamos h2, .nosotres h2 {
     font-size: 2.4rem; }
   .mision p, .dondeVamos p, .nosotres p {
