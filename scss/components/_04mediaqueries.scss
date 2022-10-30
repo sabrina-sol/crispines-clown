@@ -77,6 +77,13 @@
     .imgCarousel {
         @include size (1038px, 350px);
     }
+    .provincias {
+        div {
+            h5 {
+                font-size: 2rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1022px) {
@@ -156,6 +163,16 @@
     .imgCarousel {
         height: 250px;
     }
+    .provincias {
+        padding: 0;
+        div {
+            padding: 5px 15px;
+            h5 {
+                font-size: 1.6rem;
+                margin: 0;
+            }
+        }
+    }
     .nosotres {
         div {
             flex-direction: column;
@@ -195,6 +212,11 @@
                     @include size (390px, 200px);
                 }
             }
+        }
+    }
+    .provincias {
+        div {
+            padding: 5px 15px 7px 15px;
         }
     }
 }
@@ -241,6 +263,14 @@
     }
     .imgCarousel {
         height: 190px;
+    }
+    .provincias {
+        bottom: 0.8rem;
+        div {
+            h5 {
+                font-size: 1.4rem;
+            }
+        }
     }
     .nosotres {
         padding: 20px 25px;

@@ -229,6 +229,17 @@ html {
   height: 500px;
   object-fit: cover; }
 
+.provincias {
+  display: flex;
+  justify-content: center; }
+  .provincias div {
+    background-color: rgba(0, 99, 135, 0.7);
+    width: max-content;
+    border-radius: 60px;
+    padding: 5px 20px; }
+    .provincias div h5 {
+      font-size: 2.5rem; }
+
 /* -------------------------------- NOSOTRES -------------------------------- */
 .nosotres div {
   display: flex;
@@ -460,7 +471,9 @@ html {
     padding: 0 140px; }
   .imgCarousel {
     width: 1038px;
-    height: 350px; } }
+    height: 350px; }
+  .provincias div h5 {
+    font-size: 2rem; } }
 
 @media screen and (max-width: 1022px) {
   .dondeVamos1 {
@@ -511,6 +524,13 @@ html {
       margin-bottom: 20px; }
   .imgCarousel {
     height: 250px; }
+  .provincias {
+    padding: 0; }
+    .provincias div {
+      padding: 5px 15px; }
+      .provincias div h5 {
+        font-size: 1.6rem;
+        margin: 0; }
   .nosotres div {
     flex-direction: column;
     align-items: center;
@@ -534,7 +554,9 @@ html {
     padding: 0; }
   .mision div div img {
     width: 390px;
-    height: 200px; } }
+    height: 200px; }
+  .provincias div {
+    padding: 5px 15px 7px 15px; } }
 
 @media screen and (max-width: 420px) {
   .hero h1 {
@@ -561,6 +583,10 @@ html {
     height: 220px; }
   .imgCarousel {
     height: 190px; }
+  .provincias {
+    bottom: 0.8rem; }
+    .provincias div h5 {
+      font-size: 1.4rem; }
   .nosotres {
     padding: 20px 25px; }
     .nosotres div img {

@@ -105,6 +105,20 @@
     object-fit: cover;
 }
 
+.provincias {
+    display: flex;
+    justify-content: center;
+    div {
+        background-color: rgba(0, 99, 135, 0.7);
+        width: max-content;
+        border-radius: 60px;
+        padding: 5px 20px;
+        h5 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
 /* -------------------------------- NOSOTRES -------------------------------- */
 
 .nosotres {
