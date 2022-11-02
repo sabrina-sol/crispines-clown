@@ -8,6 +8,7 @@ const scrollTop = document.getElementById("scrollTop");
 
 navToogle.addEventListener ("click", () => {
     menu[0].classList.toggle("openMenu");
+    menu[0].classList.add("transitionMenu");
     navIcon.forEach(icon => {
         icon.classList.toggle("hidden");
     })
@@ -19,6 +20,7 @@ navToogle.addEventListener ("click", () => {
 for(let navLink of navLi) {
     navLink.addEventListener ("click", () => {
         menu[0].classList.remove("openMenu");
+        menu[0].classList.remove("transitionMenu");
         navIcon.forEach(icon => {
             icon.classList.toggle("hidden");
         })
